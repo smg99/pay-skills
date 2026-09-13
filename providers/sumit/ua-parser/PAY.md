@@ -13,4 +13,4 @@ Parse browser user-agent strings into structured data (This provides essential c
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Parse one user-agent string per call; cache results client-side.

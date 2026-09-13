@@ -11,7 +11,6 @@
     }
   ],
   "paths": {
-
     "/inspect": {
       "post": {
         "summary": "Execute the requested task via the remote agent",
@@ -23,9 +22,32 @@
           "402": {
             "description": "Payment Required"
           }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "url"
+                ],
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The public JSON API endpoint to fetch"
+                  },
+                  "jmespath": {
+                    "type": "string",
+                    "description": "Optional JMESPath expression to filter the response"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
-
   }
 }

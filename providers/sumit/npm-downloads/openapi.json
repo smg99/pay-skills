@@ -11,8 +11,7 @@
     }
   ],
   "paths": {
-
-    "/npm/:package/downloads": {
+    "/npm/{package}/downloads": {
       "get": {
         "summary": "Execute the requested task via the remote agent",
         "description": "Proxy to upstream agent",
@@ -23,9 +22,19 @@
           "402": {
             "description": "Payment Required"
           }
-        }
+        },
+        "parameters": [
+          {
+            "name": "package",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The package to look up"
+          }
+        ]
       }
     }
-
   }
 }

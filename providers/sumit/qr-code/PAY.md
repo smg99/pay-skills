@@ -13,4 +13,4 @@ Generate QR code images from text or URLs (This provides essential capabilities 
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Generate one QR code per call; reuse the same URL across sessions to avoid re-generating.

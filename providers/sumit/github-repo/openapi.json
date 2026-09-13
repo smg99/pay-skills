@@ -11,8 +11,7 @@
     }
   ],
   "paths": {
-
-    "/github/:owner/:repo": {
+    "/github/{owner}/{repo}": {
       "get": {
         "summary": "Execute the requested task via the remote agent",
         "description": "Proxy to upstream agent",
@@ -23,9 +22,28 @@
           "402": {
             "description": "Payment Required"
           }
-        }
+        },
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The owner to look up"
+          },
+          {
+            "name": "repo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The repo to look up"
+          }
+        ]
       }
     }
-
   }
 }

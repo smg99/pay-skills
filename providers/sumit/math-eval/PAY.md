@@ -13,4 +13,4 @@ Evaluate complex mathematical expressions safely (This provides essential capabi
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Combine expressions into one request body to minimise paid calls.

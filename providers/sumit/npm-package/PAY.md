@@ -13,4 +13,4 @@ Retrieve the latest version, description, and normalized metadata for any NPM pa
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Use the exact package name including scope (e.g. @org/pkg) where applicable.

@@ -13,4 +13,4 @@ Fetches the plain-text summary of a Wikipedia article via the public REST API.
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Use the exact article title to resolve in a single API call.

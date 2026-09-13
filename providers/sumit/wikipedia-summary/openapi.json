@@ -11,8 +11,7 @@
     }
   ],
   "paths": {
-
-    "/summary/:title": {
+    "/summary/{title}": {
       "get": {
         "summary": "Execute the requested task via the remote agent",
         "description": "Proxy to upstream agent",
@@ -23,9 +22,19 @@
           "402": {
             "description": "Payment Required"
           }
-        }
+        },
+        "parameters": [
+          {
+            "name": "title",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The title to look up"
+          }
+        ]
       }
     }
-
   }
 }

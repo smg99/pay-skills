@@ -13,4 +13,4 @@ Get download statistics for an NPM package over a selected time period.
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Specify the exact package name to avoid ambiguous lookups.

@@ -13,4 +13,4 @@ Fetch a public JSON API and optionally extract fields via JMESPath.
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Supply the full JMESPath query to extract only the fields you need.

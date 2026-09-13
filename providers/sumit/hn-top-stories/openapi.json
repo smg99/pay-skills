@@ -11,7 +11,6 @@
     }
   ],
   "paths": {
-
     "/top-stories": {
       "post": {
         "summary": "Execute the requested task via the remote agent",
@@ -23,9 +22,25 @@
           "402": {
             "description": "Payment Required"
           }
+        },
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "limit": {
+                    "type": "integer",
+                    "default": 10,
+                    "description": "Number of top stories to return (max 30)"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
-
   }
 }

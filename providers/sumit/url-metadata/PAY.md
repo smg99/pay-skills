@@ -13,4 +13,4 @@ Fetch a webpage and return useful metadata (title, description, OG tags, etc.)
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Supply the canonical URL; avoid redirects that trigger extra fetches.

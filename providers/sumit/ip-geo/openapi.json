@@ -7,15 +7,26 @@
   },
   "servers": [
     {
-      "url": "https://npm-downloads-pay.sumitg3767.workers.dev"
+      "url": "https://ip-geo-pay.sumitg3767.workers.dev"
     }
   ],
   "paths": {
-
-    "/npm/:package/downloads": {
+    "/ip/{address}": {
       "get": {
-        "summary": "Execute the requested task via the remote agent",
-        "description": "Proxy to upstream agent",
+        "summary": "Get geolocation data for an IP address",
+        "description": "Returns geographic location, ISP, timezone, and country data for the given IP.",
+        "parameters": [
+          {
+            "name": "address",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The IPv4 or IPv6 address to geolocate",
+            "example": "8.8.8.8"
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful response"
@@ -26,6 +37,5 @@
         }
       }
     }
-
   }
 }

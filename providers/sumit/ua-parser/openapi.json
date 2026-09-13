@@ -11,7 +11,6 @@
     }
   ],
   "paths": {
-
     "/parse": {
       "post": {
         "summary": "Execute the requested task via the remote agent",
@@ -23,9 +22,27 @@
           "402": {
             "description": "Payment Required"
           }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "userAgent"
+                ],
+                "properties": {
+                  "userAgent": {
+                    "type": "string",
+                    "description": "The raw User-Agent string to parse"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
-
   }
 }

@@ -13,4 +13,4 @@ Look up comprehensive data about a country, including currencies, regions, and d
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Use the ISO 3166-1 alpha-2 country code where possible for a precise match.

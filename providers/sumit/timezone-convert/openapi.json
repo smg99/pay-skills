@@ -7,12 +7,11 @@
   },
   "servers": [
     {
-      "url": "https://github-repo-pay.sumitg3767.workers.dev"
+      "url": "https://timezone-convert-pay.sumitg3767.workers.dev"
     }
   ],
   "paths": {
-
-    "/timezone/:area/:location": {
+    "/timezone/{area}/{location}": {
       "get": {
         "summary": "Execute the requested task via the remote agent",
         "description": "Proxy to upstream agent",
@@ -23,9 +22,28 @@
           "402": {
             "description": "Payment Required"
           }
-        }
+        },
+        "parameters": [
+          {
+            "name": "area",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The area to look up"
+          },
+          {
+            "name": "location",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The location to look up"
+          }
+        ]
       }
     }
-
   }
 }

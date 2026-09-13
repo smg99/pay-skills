@@ -11,8 +11,7 @@
     }
   ],
   "paths": {
-
-    "/holidays/:year/:country": {
+    "/holidays/{year}/{country}": {
       "get": {
         "summary": "Execute the requested task via the remote agent",
         "description": "Proxy to upstream agent",
@@ -23,9 +22,28 @@
           "402": {
             "description": "Payment Required"
           }
-        }
+        },
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The year to look up"
+          },
+          {
+            "name": "country",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The country to look up"
+          }
+        ]
       }
     }
-
   }
 }

@@ -13,4 +13,4 @@ Retrieve an HN user's karma, account age, and recent activity aggregated.
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Provide the exact HN username to retrieve stats in a single call.

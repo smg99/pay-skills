@@ -13,4 +13,4 @@ Fetch current public information about a GitHub repository, including its metada
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Provide owner and repo name together to resolve in a single call.

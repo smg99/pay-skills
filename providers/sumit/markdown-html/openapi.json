@@ -11,7 +11,6 @@
     }
   ],
   "paths": {
-
     "/convert": {
       "post": {
         "summary": "Execute the requested task via the remote agent",
@@ -23,9 +22,27 @@
           "402": {
             "description": "Payment Required"
           }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "markdown"
+                ],
+                "properties": {
+                  "markdown": {
+                    "type": "string",
+                    "description": "The Markdown text to convert to HTML"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
-
   }
 }

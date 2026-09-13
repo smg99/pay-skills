@@ -13,4 +13,4 @@ Encode and decode base64 strings (This provides essential capabilities for auton
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Batch encode/decode multiple strings in one request body where possible.

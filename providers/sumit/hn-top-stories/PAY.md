@@ -13,4 +13,4 @@ Fetch and combine the top stories from HackerNews into a single JSON array, savi
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Use a single call; filter top-N client-side to avoid repeated requests.

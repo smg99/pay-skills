@@ -13,4 +13,4 @@ Fetch normalized public profile data, repositories count, and follower count for
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Provide the exact GitHub username; partial matches trigger additional calls.

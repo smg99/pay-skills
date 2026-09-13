@@ -11,8 +11,7 @@
     }
   ],
   "paths": {
-
-    "/hn-user/:username": {
+    "/hn-user/{username}": {
       "get": {
         "summary": "Execute the requested task via the remote agent",
         "description": "Proxy to upstream agent",
@@ -23,9 +22,19 @@
           "402": {
             "description": "Payment Required"
           }
-        }
+        },
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The username to look up"
+          }
+        ]
       }
     }
-
   }
 }

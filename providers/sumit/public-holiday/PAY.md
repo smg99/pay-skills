@@ -13,4 +13,4 @@ Lists public holidays for a given year and country using Nager.Date.
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Supply a 4-digit year and ISO 3166-1 alpha-2 country code for precise results.

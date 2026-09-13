@@ -13,4 +13,4 @@ Convert Markdown text into styled HTML (This provides essential capabilities for
 
 ## Spend-aware usage
 
-- TODO: list patterns that minimize paid calls.
+- Send the full Markdown document in one request rather than multiple partial calls.
